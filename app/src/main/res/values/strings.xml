@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bill Splittr</string>
+    <string name="txtSubTotal">Bill subtotal (w/o tax)</string>
+    <string name="numSubTotal">$</string>
+    <string name="txtTaxRate">Tax rate (%)</string>
+    <string name="numTaxRate">9.0</string>
+    <string name="txtSatisfaction">How was the service?</string>
+    <string name="txtTip">Tip (%)</string>
+    <string name="numTipRate">15</string>
+    <string-array name="satisfactionGroup">
+        <item>Great (20%)</item>
+        <item>Average (15%)</item>
+        <item>Mediocre (10%)</item>
+        <item>Awful (0%)</item>
+    </string-array>
+    <string name="txtSatisfactionSwitch">Use custom tip?</string>
+    <string name="txtCustomTip">Custom tip</string>
+    <string name="txtNumSplits">Number of times to split the bill</string>
+    <string name="numSplits">2</string>
+    <string name="btnSplit">Split bill</string>
+    <string name="txtInfo">Enter the info below and the bill will be split evenly</string>
+</resources>

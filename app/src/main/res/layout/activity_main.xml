@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtInfo"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtSubTotal"
+            android:textSize="18sp"
+            android:layout_below="@id/txtInfo"/>
+
+        <EditText
+            android:id="@+id/numSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/txtSubTotal"
+            android:hint="@string/numSubTotal"/>
+
+        <TextView
+            android:id="@+id/txtTaxRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTaxRate"
+            android:textSize="18sp"
+            android:layout_below="@id/numSubTotal"/>
+
+        <EditText
+            android:id="@+id/numTaxRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/txtTaxRate"
+            android:hint="@string/numTaxRate"/>
+
+        <TextView
+            android:id="@+id/txtTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTip"
+            android:textSize="18sp"
+            android:layout_below="@id/numTaxRate"/>
+
+        <EditText
+            android:id="@+id/numTipRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/numTipRate"
+            android:layout_below="@id/txtTip"/>
+
+        <!--
+        <TextView
+            android:id="@+id/txtSatisfaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtSatisfaction"
+            android:textSize="18sp"
+            android:layout_below="@id/numTaxRate"/>
+
+
+        <Spinner
+            android:id="@+id/spinnerSatisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/satisfactionGroup"
+            android:layout_below="@id/txtSatisfaction"/>
+
+        <Switch
+            android:id="@+id/switchSatisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtSatisfactionSwitch"
+            android:layout_below="@id/spinnerSatisfaction"/>
+
+        <EditText
+            android:id="@+id/numCustomTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:layout_below="@id/switchSatisfaction"
+            android:hint="@string/txtCustomTip"/>
+        -->
+        <TextView
+            android:id="@+id/txtNumSplits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtNumSplits"
+            android:textSize="18sp"
+            android:layout_below="@id/numTipRate"/>
+
+
+        <EditText
+            android:id="@+id/numSplits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_below="@id/txtNumSplits"
+            android:hint="@string/numSplits"/>
+
+        <Button
+            android:id="@+id/btnSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSplit"
+            android:textSize="22sp"
+            android:layout_below="@id/numSplits"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_below="@id/btnSplit"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
